@@ -7,116 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <style>
-      body {
-          font-family: 'Roboto', sans-serif;
-          background-color: #f8f9fa;
-      }
-
-      .pantone-theme-1 {
-          --primary-color: #4A90E2;
-          --secondary-color: #A5D6A7;
-          --accent-color: #FFAB91;
-      }
-
-      .pantone-theme-2 {
-          --primary-color: #50E3C2;
-          --secondary-color: #B2EBF2;
-          --accent-color: #FFD54F;
-      }
-
-      .pantone-theme-3 {
-          --primary-color: #BD10E0;
-          --secondary-color: #E1BEE7;
-          --accent-color: #FF8A80;
-      }
-
-      .pantone-theme-4 {
-          --primary-color: #F5A623;
-          --secondary-color: #FFF59D;
-          --accent-color: #A1887F;
-      }
-
-      .pantone-theme-5 {
-          --primary-color: #9013FE;
-          --secondary-color: #D1C4E9;
-          --accent-color: #81D4FA;
-      }
-
-      .theme-background {
-          background-color: var(--secondary-color);
-      }
-
-      .theme-text {
-          color: var(--primary-color);
-      }
-
-      .theme-accent-bg {
-          background-color: var(--accent-color);
-      }
-
-      .theme-primary-bg {
-          background-color: var(--primary-color);
-      }
-
-      .theme-ring-color {
-          border-color: var(--primary-color);
-      }
-
-      .progress-carbs {
-          background-color: #A5D6A7;
-      }
-
-      .progress-protein {
-          background-color: #8DB4E3;
-      }
-
-      .progress-fat {
-          background-color: #F29494;
-      }
-
-      .ring {
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          position: relative;
-      }
-
-      .ring-bg {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: conic-gradient(
-                  #A5D6A7 0% 40%,
-                  #8DB4E3 40% 70%,
-                  #F29494 70% 85%,
-                  #E5E7EB 85% 100%
-          );
-          transform: rotate(-120deg);
-      }
-
-      .ring-inner {
-          position: absolute;
-          top: 15px;
-          left: 15px;
-          right: 15px;
-          bottom: 15px;
-          background-color: #f8f9fa;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-      }
-
-      .theme-button {
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          cursor: pointer;
-          border: 1px solid #ddd;
-      }
-  </style>
+  <link href="Agent/style.css" rel="stylesheet"/>
   <style>
       body {
           min-height: max(884px, 100dvh);
@@ -203,8 +94,9 @@
     <!--<button class="theme-button pantone-theme-4" onclick="changeTheme('pantone-theme-4')" style="background-color: #F5A623;"></button>-->
     <!--<button class="theme-button pantone-theme-5" onclick="changeTheme('pantone-theme-5')" style="background-color: #9013FE;"></button>-->
     <!--</div>-->
+      </main>
     </div>
-  </main>
+
   <footer class="bg-white border-t border-gray-200 p-2 flex justify-around">
     <a class="text-center theme-text" href="#">
       <span class="material-icons">home</span>
@@ -226,7 +118,7 @@
       <p class="text-xs">Settings</p>
     </a>
   </footer>
-</div>
+
 <script>
     // function changeTheme(themeClass) {
     //     document.body.className = themeClass;
