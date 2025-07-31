@@ -4,31 +4,12 @@ body {
     min-height: max(884px, 100dvh);
 }
 
-.pantone-theme-1 {
+.theme-1 {
     --primary-color: #4A90E2;
     --secondary-color: #A5D6A7;
     --accent-color: #FFAB91;
 }
-.pantone-theme-2 {
-    --primary-color: #50E3C2;
-    --secondary-color: #B2EBF2;
-    --accent-color: #FFD54F;
-}
-.pantone-theme-3 {
-    --primary-color: #BD10E0;
-    --secondary-color: #E1BEE7;
-    --accent-color: #FF8A80;
-}
-.pantone-theme-4 {
-    --primary-color: #F5A623;
-    --secondary-color: #FFF59D;
-    --accent-color: #A1887F;
-}
-.pantone-theme-5 {
-    --primary-color: #9013FE;
-    --secondary-color: #D1C4E9;
-    --accent-color: #81D4FA;
-}
+
 .theme-background {
     background-color: var(--secondary-color);
 }
