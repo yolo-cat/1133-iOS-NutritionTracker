@@ -4,23 +4,22 @@
 
 ```
 NuTrackDemo03/
-├── 📱 NuTrackDemo03App.swift        # 應用程式入口點
-├── 👁️ NutritionTrackerView.swift    # 主要視圖控制器
-├── 📊 Models/                       # 資料模型層
-│   ├── NutritionModels.swift        # 核心營養資料結構
-│   └── MockData.swift               # 測試/展示資料
-├── 🎨 Views/                        # 使用者介面層
-│   ├── NutritionTrackerView.swift   # 主要追蹤視圖
-│   ├── Components/                  # 可重用 UI 組件
-│   │   ├── CustomTabView.swift      # 自定義標籤視圖
-│   │   └── TodayFoodLogView.swift   # 今日食物記錄組件
-│   └── TabPages/                    # 各個分頁視圖
-│       ├── AddMealView.swift        # 新增餐點頁面
-│       ├── DiaryView.swift          # 飲食日記頁面
-│       ├── SettingsView.swift       # 設定頁面
-│       └── TrendsView.swift         # 趨勢分析頁面
-├── 🛠️ Extensions/                   # 擴展功能
-│    └── Color+NutritionTheme.swift  # 色彩主題
+├── 📱 [NuTrackDemo03App.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/NuTrackDemo03App.swift)      # 應用程式入口點
+├── 📊 Models/                         # 資料模型層
+│   ├── NutritionModels.swift         # 核心營養資料結構
+│   └── MockData.swift                # 測試/展示資料
+├── 🎨 Views/                         # 使用者介面層
+│   ├── 👁️ NutritionTrackerView.swift # 主要追蹤視圖
+│   ├── Components/                   # 可重用 UI 組件
+│   │   ├── CustomTabView.swift       # 自定義標籤視圖
+│   │   └── TodayFoodLogView.swift    # 今日食物記錄組件
+│   └── TabPages/                     # 各個分頁視圖
+│       ├── AddMealView.swift         # 新增餐點頁面
+│       ├── DiaryView.swift           # 飲食日記頁面
+│       ├── SettingsView.swift        # 設定頁面
+│       └── TrendsView.swift          # 趨勢分析頁面
+├── 🛠️ Extensions/                    # 擴展功能
+│    └── Color+NutritionTheme.swift   # 色彩主題
 ```
 
 ## 🏗️ 各層結構詳細說明
