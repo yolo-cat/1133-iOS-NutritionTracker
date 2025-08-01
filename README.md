@@ -50,7 +50,7 @@ struct NuTrackDemo03App: App {
 **路徑：** `Models/`
 
 #### 3.1 核心資料結構
-**檔案：** `NutritionModels.swift`
+**檔案：** [`NutritionModels.swift`](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Models/NutritionModels.swift)
 
 ```swift
 // 營養資訊核心結構
@@ -76,7 +76,7 @@ enum MealType: String, CaseIterable {
 - **可擴展性：** 提供清晰的資料模型擴展介面
 
 #### 3.2 測試資料
-**檔案：** `MockData.swift`
+**檔案：** [`MockData.swift`](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Models/MockData.swift)
 
 ```swift
 extension MealItem {
@@ -98,7 +98,7 @@ extension MealItem {
 **路徑：** `Views/`
 
 #### 4.1 主要視圖控制器
-**檔案：** `NutritionTrackerView.swift`
+**檔案：** [`NutritionTrackerView.swift`](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/NutritionTrackerView.swift)
 
 ```swift
 struct NewNutritionTrackerView: View {
@@ -123,7 +123,7 @@ struct NewNutritionTrackerView: View {
 #### 4.2 可重用組件 (Components)
 **路徑：** `Views/Components/`
 
-##### CustomTabView.swift
+##### [CustomTabView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/Components/CustomTabView.swift)
 ```swift
 struct CustomTabView: View {
     @Binding var selectedTab: Int
@@ -140,7 +140,7 @@ struct CustomTabView: View {
 - **互動增強：** 提供更豐富的使用者互動體驗
 - **可重用性：** 在多個地方重複使用的自定義組件
 
-##### TodayFoodLogView.swift
+##### [TodayFoodLogView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/Components/TodayFoodLogView.swift)
 ```swift
 struct TodayFoodLogView: View {
     let foodEntries: [FoodLogEntry]
@@ -160,7 +160,7 @@ struct TodayFoodLogView: View {
 #### 4.3 功能頁面 (TabPages)
 **路徑：** `Views/TabPages/`
 
-##### AddMealView.swift
+##### [AddMealView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/TabPages/AddMealView.swift)
 ```swift
 struct AddMealView: View {
     @State private var selectedMealType: MealType = .breakfast
@@ -177,7 +177,7 @@ struct AddMealView: View {
 - **批次選擇：** 支援多種食物的批次新增
 - **即時反饋：** 提供即時的營養資訊計算
 
-##### DiaryView.swift
+##### [DiaryView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/TabPages/DiaryView.swift)
 ```swift
 struct DiaryView: View {
     @State private var selectedDate = Date()
@@ -193,7 +193,7 @@ struct DiaryView: View {
 - **統計概覽：** 週統計和趨勢展示
 - **詳細分析：** 單日詳細營養分解
 
-##### SettingsView.swift
+##### [SettingsView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/TabPages/SettingsView.swift)
 ```swift
 struct SettingsView: View {
     @State private var dailyCalorieGoal = 1973
@@ -209,7 +209,7 @@ struct SettingsView: View {
 - **單位選擇：** 公制/英制單位切換
 - **資料管理：** 備份、重置等資料操作
 
-##### TrendsView.swift
+##### [TrendsView.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/Views/TabPages/TrendsView.swift)
 ```swift
 struct TrendsView: View {
     @State private var selectedTimeRange: TimeRange = .week
