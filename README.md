@@ -1,6 +1,4 @@
-# 1133-iOS-NutritionTracker
-
-# NuTrackDemo03 專案結構完整分析
+# NuTrackDemo03 專案結構
 
 ## 📁 專案整體架構
 
