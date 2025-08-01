@@ -4,7 +4,7 @@
 
 ```
 NuTrackDemo03/
-├── 📱 [NuTrackDemo03App.swift](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/NuTrackDemo03App.swift)      # 應用程式入口點
+├── 📱 NuTrackDemo03App.swift          # 應用程式入口點
 ├── 📊 Models/                         # 資料模型層
 │   ├── NutritionModels.swift         # 核心營養資料結構
 │   └── MockData.swift                # 測試/展示資料
