@@ -27,7 +27,7 @@ NuTrackDemo03/
 ### 2. 應用程式核心層 (Application Core)
 
 #### 2.1 應用程式入口點
-**檔案：** `NuTrackDemo03App.swift`
+**檔案：** [`NuTrackDemo03App.swift`](https://github.com/yolo-cat/1133-iOS-NutritionTracker/blob/main/NuTrackDemo03/NuTrackDemo03App.swift)
 
 ```swift
 @main
