@@ -5,6 +5,7 @@
 //  Created by NuTrack on 2024/7/31.
 //
 
+import SwiftUI
 import Foundation
 
 // MARK: - Core Data Models
@@ -136,9 +137,9 @@ struct NutritionData {
     
     /// 獲取營養素攝取狀態
     var nutritionStatus: NutritionStatus {
-        let carbsStatus = carbs.current >= carbs.goal ? .adequate : .insufficient
-        let proteinStatus = protein.current >= protein.goal ? .adequate : .insufficient
-        let fatStatus = fat.current >= fat.goal ? .adequate : .insufficient
+        let carbsStatus: NutrientStatus =  carbs.current >= carbs.goal ? .adequate : .insufficient
+        let proteinStatus: NutrientStatus = protein.current >= protein.goal ? .adequate : .insufficient
+        let fatStatus: NutrientStatus = fat.current >= fat.goal ? .adequate : .insufficient
         
         let adequateCount = [carbsStatus, proteinStatus, fatStatus].filter { $0 == .adequate }.count
         
