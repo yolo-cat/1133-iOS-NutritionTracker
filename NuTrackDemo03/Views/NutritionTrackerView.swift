@@ -15,49 +15,25 @@ struct NewNutritionTrackerView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            // Home Tab
+            // Home Tab - Main nutrition tracking view
             NavigationView {
                 mainNutritionView
             }
             .tabItem {
                 Image(systemName: "house.fill")
-                Text("Home")
+                Text("營養追蹤")
             }
             .tag(0)
             
-            // Diary Tab
-            DiaryView()
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Diary")
-                }
-                .tag(1)
-            
-            // Add Tab (Center with larger icon)
+            // Add Meal Tab - Simplified food addition
             AddMealView { newEntry in
                 addMealEntry(newEntry)
             }
             .tabItem {
                 Image(systemName: "plus.circle.fill")
-                Text("Add")
+                Text("新增餐點")
             }
-            .tag(2)
-            
-            // Trends Tab
-            TrendsView()
-                .tabItem {
-                    Image(systemName: "chart.line.uptrend.xyaxis")
-                    Text("Trends")
-                }
-                .tag(3)
-            
-            // Settings Tab
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("Settings")
-                }
-                .tag(4)
+            .tag(1)
         }
         .accentColor(.primaryBlue)
     }
@@ -100,9 +76,9 @@ struct NewNutritionTrackerView: View {
             // Central nutrition ring showing calorie progress
             CalorieRingView(nutritionData: nutritionData)
             
-            // Consumed vs Burned display
-            HStack(spacing: 40) {
-                VStack {
+            // Enhanced nutrition summary
+            HStack(spacing: 30) {
+                VStack(spacing: 4) {
                     Text("\(nutritionData.caloriesConsumed)")
                         .font(.title2)
                         .fontWeight(.bold)
@@ -113,13 +89,24 @@ struct NewNutritionTrackerView: View {
                         .foregroundColor(.secondary)
                 }
                 
-                VStack {
+                VStack(spacing: 4) {
                     Text("\(nutritionData.caloriesBurned)")
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.carbsColor)
                     
                     Text("已燃燒")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                
+                VStack(spacing: 4) {
+                    Text("\(Int(nutritionData.macronutrientPercentages.carbs * 100))%")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.carbsColor)
+                    
+                    Text("碳水比例")
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
